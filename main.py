@@ -18,7 +18,7 @@ def find_and_click():
     # Инициализация SIFT детектора
     sift = cv2.SIFT_create()
     
-    # Находим ключевые точки и дескрипторы
+    # Находим ключевые точки ирипторы
     keypoints_screen, descriptors_screen = sift.detectAndCompute(gray_screen, None)
     keypoints_template, descriptors_template = sift.detectAndCompute(template, None)
 
